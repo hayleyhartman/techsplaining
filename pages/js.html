@@ -7,32 +7,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Techsplaining</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
-        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 </head>
 
 <body>
+    <div id="wrapper">
+
     <!-- html only -->
     <div class="container box">
 
-    <h1>this is html and css and js!</h1>
+    <h1 class="regular" id="headline">this is html and css and js!</h1>
+    <p id="make-big">BIGGER</p>
+    <br>
+    <p id="make-small">smaller please</p>
+    <br>
+    <p id="make-regular">back to normal.</p>
     <marquee>we made it</marquee>
     <h5>i used js to:</h5>
     <ul>
-        <li>make that "click me" text something really fun</li>
+        <li>make that "click me" text finally do something</li>
         <li>trigger some things on page load</li>
         <li>add a counter</li>
     </ul>
-    <p>click me</p>
+    <p id="click">click me</p>
     <small>something will happen because there's javascript!!!</small>
     <br>
     <a href="/techsplaining/pages/bootstrap.html">click me to see this page with some bootstrap</a>
 
     <!-- html + css -->
     </div>  
+</div>
+
 
     <style>
         .box {
@@ -42,6 +49,51 @@
 
         marquee {
             color: #006C80;
+        }
+
+        .bigger {
+            font-size: 70px;
+        }
+
+        .smaller {
+            font-size: 12px;
+        }
+
+        .regular {
+            font-size: 32px;
+        }
+
+        .box {
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+     
+        marquee {
+            color: #ffffff;
+            font-size: 40px;
+            padding: 20px;
+            background-color: #00263E;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        h1 {
+            color: #00263E;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        li, p, a {
+            font-size: 22px;
+        }
+
+        #wrapper {
+            transform: rotate(0deg);
+            transition: all;
+            transition-timing-function: ease-in-out;
+        }
+
+        #wrapper.pink {
+            background-color: #F991CC;
+            transform: rotate(180deg);
         }
     </style>
 

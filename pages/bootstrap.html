@@ -18,18 +18,23 @@
     <!-- html only -->
     <div class="container box">
 
-    <h1>this is html and css</h1>
-    <marquee>weirdly this is also plain html, go figure</marquee>
-    <h5>i used css to:</h5>
-    <ul>
-        <li>change the color of the marquee</li>
-        <li>limit the width of the container and put it in the middle of the screen</li>
-        <li>evened out the spacing between elements</li>
-    </ul>
-    <p>click me</p>
-    <small>nothing will happen because there's no javascript</small>
-    <br>
-    <a href="/htmlCssJs.html">click me to go to see this page with some javascript</a>
+    <h1>this is if we add bootstrap!</h1>
+    <div class="row">
+        <div class="col-md-6">
+            <h5>i used bootstrap to:</h5>
+            <ul>
+                <li>arrange these elements a little better</li>
+                <li>put an alert on the page</li>
+                <li>make this page mobile-friendly</li>
+            </ul>
+            <div class="alert alert-success" role="alert">
+                Alert! We've reached the end of my example pages!
+              </div>
+        </div>
+        <div class="col-md-6">
+            <img src="../assets/IMG_4157.png">
+        </div>
+    </div>
 
     <!-- html + css -->
     </div>  
@@ -45,6 +50,10 @@
             font-size: 40px;
             padding: 20px;
             background-color: #00263E;
+        }
+
+        img {
+            max-width: 100%;
         }
     </style>
 
